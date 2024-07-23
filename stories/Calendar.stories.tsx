@@ -6,13 +6,11 @@ import type { Meta } from '@storybook/react';
 const meta: Meta<typeof Calendar> = {
   component: Calendar,
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
   },
-  tags: ['autodocs']
+  tags: ['autodocs'],
 };
 
 export default meta;
 
-export const Example = (args: any) => (
-  <Calendar aria-label="Event date" {...args} />
-);
+export const Example = (args: any) => <Calendar aria-label="Event date" {...args} />;

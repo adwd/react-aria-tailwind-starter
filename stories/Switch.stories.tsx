@@ -5,9 +5,9 @@ import { Switch } from '../src/Switch';
 const meta: Meta<typeof Switch> = {
   component: Switch,
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
   },
-  tags: ['autodocs']
+  tags: ['autodocs'],
 };
 
 export default meta;

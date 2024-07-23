@@ -1,5 +1,9 @@
 import React from 'react';
-import { Toolbar as RACToolbar, ToolbarProps, composeRenderProps } from 'react-aria-components';
+import {
+  Toolbar as RACToolbar,
+  type ToolbarProps,
+  composeRenderProps,
+} from 'react-aria-components';
 import { tv } from 'tailwind-variants';
 
 const styles = tv({
@@ -7,18 +11,18 @@ const styles = tv({
   variants: {
     orientation: {
       horizontal: 'flex-row',
-      vertical: 'flex-col items-start'
-    }
-  }
-})
+      vertical: 'flex-col items-start',
+    },
+  },
+});
 
 export function Toolbar(props: ToolbarProps) {
   return (
     <RACToolbar
       {...props}
-      className={composeRenderProps(
-        props.className,
-        (className, renderProps) => styles({...renderProps, className})
-      )} />
+      className={composeRenderProps(props.className, (className, renderProps) =>
+        styles({ ...renderProps, className }),
+      )}
+    />
   );
 }

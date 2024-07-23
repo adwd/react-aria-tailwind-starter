@@ -5,13 +5,11 @@ import { RangeCalendar } from '../src/RangeCalendar';
 const meta: Meta<typeof RangeCalendar> = {
   component: RangeCalendar,
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
   },
-  tags: ['autodocs']
+  tags: ['autodocs'],
 };
 
 export default meta;
 
-export const Example = (args: any) => (
-  <RangeCalendar aria-label="Trip dates" {...args} />
-);
+export const Example = (args: any) => <RangeCalendar aria-label="Trip dates" {...args} />;

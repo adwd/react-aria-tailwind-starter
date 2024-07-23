@@ -10,8 +10,8 @@ export default {
   argTypes: {},
   args: {
     isDisabled: false,
-    children: 'Checkbox'
-  }
+    children: 'Checkbox',
+  },
 };
 
 export const Default = {

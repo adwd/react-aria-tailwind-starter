@@ -5,7 +5,7 @@ import { Tag, TagGroup } from '../src/TagGroup';
 const meta: Meta<typeof Example> = {
   component: TagGroup,
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
   },
   tags: ['autodocs'],
 };
@@ -23,5 +23,5 @@ export const Example = (args: any) => (
 
 Example.args = {
   label: 'Ice cream flavor',
-  selectionMode: 'single'
+  selectionMode: 'single',
 };
