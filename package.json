@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@biomejs/biome": "^1.8.3",
-    "lucide-react": "^0.429.0",
+    "lucide-react": "^0.433.0",
     "postcss": "^8.4.39",
     "react-aria-components": "latest",
     "tailwind-variants": "^0.2.1",
