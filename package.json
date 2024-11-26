@@ -19,7 +19,7 @@
     "storybook": "^8.2.5",
     "tailwindcss-react-aria-components": "^1.1.4",
     "typescript": "5.7.2",
-    "vite": "^5.3.4"
+    "vite": "^6.0.0"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
