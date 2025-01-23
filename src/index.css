@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin 'tailwindcss-react-aria-components';
 @plugin 'tailwindcss-animate';
@@ -12,28 +12,28 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
 }
 
 /* Scale up hit targets on high resolution mobile devices. */
 @media (min-resolution: 200dpi) {
-  html {
-    font-size: 18px;
-  }
+	html {
+		font-size: 18px;
+	}
 
-  .text-sm {
-    /* ensure minimum font size of 16px */
-    font-size: 0.9rem;
-  }
+	.text-sm {
+		/* ensure minimum font size of 16px */
+		font-size: 0.9rem;
+	}
 }
 
 body {
-  @apply bg-white dark:bg-zinc-900;
-  color-scheme: dark light;
+	@apply bg-white dark:bg-zinc-900;
+	color-scheme: dark light;
 }
