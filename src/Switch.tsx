@@ -23,7 +23,7 @@ const track = tv({
 });
 
 const handle = tv({
-  base: 'h-3 w-3 transform rounded-full bg-white dark:bg-zinc-900 outline outline-1 -outline-offset-1 outline-transparent shadow-sm transition duration-200 ease-in-out',
+  base: 'h-3 w-3 transform rounded-full bg-white dark:bg-zinc-900 outline outline-1 -outline-offset-1 outline-transparent shadow-xs transition duration-200 ease-in-out',
   variants: {
     isSelected: {
       false: 'translate-x-0',

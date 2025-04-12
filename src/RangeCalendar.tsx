@@ -44,7 +44,7 @@ export function RangeCalendar<T extends DateValue>({
   return (
     <AriaRangeCalendar {...props}>
       <CalendarHeader />
-      <CalendarGrid className="[&_td]:px-0">
+      <CalendarGrid className="[&_td]:px-0 [&_td]:py-px">
         <CalendarGridHeader />
         <CalendarGridBody>
           {(date) => (

@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-import { fn } from '@storybook/test';
 import React from 'react';
 import { Tab, TabList, TabPanel, Tabs } from '../src/Tabs';
 
@@ -9,9 +8,6 @@ const meta: Meta<typeof Tabs> = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  args: {
-    onSelectionChange: fn(),
-  },
 };
 
 export default meta;

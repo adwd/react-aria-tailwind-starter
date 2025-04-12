@@ -16,7 +16,7 @@ export function GridList<T extends object>({ children, ...props }: GridListProps
       {...props}
       className={composeTailwindRenderProps(
         props.className,
-        'overflow-auto relative border dark:border-zinc-600 rounded-lg',
+        'overflow-auto relative border border-gray-200 dark:border-zinc-600 rounded-lg',
       )}>
       {children}
     </AriaGridList>

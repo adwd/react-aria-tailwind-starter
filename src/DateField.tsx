@@ -37,7 +37,7 @@ export function DateField<T extends DateValue>({
 }
 
 const segmentStyles = tv({
-  base: 'inline p-0.5 type-literal:px-0 rounded-sm outline outline-0 forced-color-adjust-none caret-transparent text-gray-800 dark:text-zinc-200 forced-colors:text-[ButtonText]',
+  base: 'inline p-0.5 type-literal:px-0 rounded-xs outline outline-0 forced-color-adjust-none caret-transparent text-gray-800 dark:text-zinc-200 forced-colors:text-[ButtonText]',
   variants: {
     isPlaceholder: {
       true: 'text-gray-600 dark:text-zinc-400 italic',
@@ -55,10 +55,7 @@ export function DateInput(props: Omit<DateInputProps, 'children'>) {
   return (
     <AriaDateInput
       className={(renderProps) =>
-        fieldGroupStyles({
-          ...renderProps,
-          class: 'block min-w-[150px] px-2 py-1.5 text-sm',
-        })
+        fieldGroupStyles({ ...renderProps, class: 'block min-w-[150px] px-2 py-1.5 text-sm' })
       }
       {...props}>
       {(segment) => <DateSegment segment={segment} className={segmentStyles} />}

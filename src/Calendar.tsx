@@ -19,7 +19,7 @@ import { focusRing } from './utils';
 
 const cellStyles = tv({
   extend: focusRing,
-  base: 'w-9 h-9 text-sm cursor-default rounded-full flex items-center justify-center forced-color-adjust-none',
+  base: 'w-9 h-9 m-px text-sm cursor-default rounded-full flex items-center justify-center forced-color-adjust-none',
   variants: {
     isSelected: {
       false:

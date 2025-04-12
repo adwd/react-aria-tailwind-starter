@@ -9,27 +9,24 @@ const excludedProps = new Set([
   'onCompositionUpdate',
   'onSelect',
   'onBeforeInput',
-  'onInput'
+  'onInput',
 ]);
 
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
-  stories: [
-    "../stories/**/*.mdx",
-    "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
-  ],
+  stories: ['../stories/**/*.mdx', '../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-onboarding",
-    "@storybook/addon-interactions",
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-onboarding',
+    '@storybook/addon-interactions',
   ],
   framework: {
-    name: "@storybook/react-vite",
+    name: '@storybook/react-vite',
     options: {},
   },
   docs: {
-    autodocs: "tag",
+    autodocs: 'tag',
   },
   typescript: {
     reactDocgen: 'react-docgen-typescript',
@@ -41,6 +38,6 @@ const config = {
       },
       propFilter: (prop) => !prop.name.startsWith('aria-') && !excludedProps.has(prop.name),
     },
-  }
+  },
 };
 export default config;

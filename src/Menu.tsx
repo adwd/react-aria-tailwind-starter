@@ -4,12 +4,16 @@ import {
   Menu as AriaMenu,
   MenuItem as AriaMenuItem,
   type MenuProps as AriaMenuProps,
+  MenuSection as AriaMenuSection,
+  type MenuSectionProps as AriaMenuSectionProps,
+  Collection,
+  Header,
   type MenuItemProps,
   Separator,
   type SeparatorProps,
   composeRenderProps,
 } from 'react-aria-components';
-import { DropdownSection, type DropdownSectionProps, dropdownItemStyles } from './ListBox';
+import { dropdownItemStyles } from './ListBox';
 import { Popover, type PopoverProps } from './Popover';
 
 interface MenuProps<T> extends AriaMenuProps<T> {
@@ -28,8 +32,10 @@ export function Menu<T extends object>(props: MenuProps<T>) {
 }
 
 export function MenuItem(props: MenuItemProps) {
+  const textValue =
+    props.textValue || (typeof props.children === 'string' ? props.children : undefined);
   return (
-    <AriaMenuItem {...props} className={dropdownItemStyles}>
+    <AriaMenuItem textValue={textValue} {...props} className={dropdownItemStyles}>
       {composeRenderProps(props.children, (children, { selectionMode, isSelected, hasSubmenu }) => (
         <>
           {selectionMode !== 'none' && (
@@ -53,6 +59,18 @@ export function MenuSeparator(props: SeparatorProps) {
   );
 }
 
-export function MenuSection<T extends object>(props: DropdownSectionProps<T>) {
-  return <DropdownSection {...props} />;
+export interface MenuSectionProps<T> extends AriaMenuSectionProps<T> {
+  title?: string;
+  items?: any;
+}
+
+export function MenuSection<T extends object>(props: MenuSectionProps<T>) {
+  return (
+    <AriaMenuSection className="first:-mt-[5px] after:content-[''] after:block after:h-[5px]">
+      <Header className="text-sm font-semibold text-gray-500 dark:text-zinc-300 px-4 py-1 truncate sticky -top-[5px] -mt-px -mx-1 z-10 bg-gray-100/60 dark:bg-zinc-700/60 backdrop-blur-md supports-[-moz-appearance:none]:bg-gray-100 border-y border-y-gray-200 dark:border-y-zinc-700 [&+*]:mt-1">
+        {props.title}
+      </Header>
+      <Collection items={props.items}>{props.children}</Collection>
+    </AriaMenuSection>
+  );
 }

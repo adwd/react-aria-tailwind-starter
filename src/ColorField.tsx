@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-  TextField as AriaTextField,
-  type TextFieldProps as AriaTextFieldProps,
+  ColorField as AriaColorField,
+  type ColorFieldProps as AriaColorFieldProps,
   type ValidationResult,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
@@ -13,26 +13,25 @@ const inputStyles = tv({
   base: 'border-2 rounded-md',
   variants: {
     isFocused: fieldBorderStyles.variants.isFocusWithin,
-    isInvalid: fieldBorderStyles.variants.isInvalid,
-    isDisabled: fieldBorderStyles.variants.isDisabled,
+    ...fieldBorderStyles.variants,
   },
 });
 
-export interface TextFieldProps extends AriaTextFieldProps {
+export interface ColorFieldProps extends AriaColorFieldProps {
   label?: string;
   description?: string;
   errorMessage?: string | ((validation: ValidationResult) => string);
 }
 
-export function TextField({ label, description, errorMessage, ...props }: TextFieldProps) {
+export function ColorField({ label, description, errorMessage, ...props }: ColorFieldProps) {
   return (
-    <AriaTextField
+    <AriaColorField
       {...props}
       className={composeTailwindRenderProps(props.className, 'flex flex-col gap-1')}>
       {label && <Label>{label}</Label>}
       <Input className={inputStyles} />
       {description && <Description>{description}</Description>}
       <FieldError>{errorMessage}</FieldError>
-    </AriaTextField>
+    </AriaColorField>
   );
 }
