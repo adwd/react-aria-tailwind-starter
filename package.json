@@ -22,7 +22,7 @@
 		"tailwindcss-animate": "^1.0.7",
 		"tailwindcss-react-aria-components": "2.0.0",
 		"typescript": "5.8.3",
-		"vite": "6.3.1"
+		"vite": "6.3.2"
 	},
 	"scripts": {
 		"storybook": "storybook dev -p 6006",
