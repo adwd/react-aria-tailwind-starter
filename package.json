@@ -37,6 +37,6 @@
 	},
 	"resolutions": {
 		"@types/mime": "4.0.0",
-		"jackspeak": "4.1.0"
+		"jackspeak": "4.1.1"
 	}
 }
