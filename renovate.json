@@ -1,13 +1,17 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:recommended", "group:all"],
-	"timezone": "Asia/Tokyo",
-	"automerge": true,
-	"packageRules": [
-		{
-			"matchUpdateTypes": ["minor", "major"],
-			"groupName": "minor and major dependencies",
-			"automerge": false
-		}
-	]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", "group:all"],
+  "timezone": "Asia/Tokyo",
+  "automerge": true,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch"],
+      "enabled": false
+    },
+    {
+      "matchUpdateTypes": ["minor", "major"],
+      "groupName": "minor and major dependencies",
+      "automerge": false
+    }
+  ]
 }
