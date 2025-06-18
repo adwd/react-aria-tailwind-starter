@@ -5,11 +5,11 @@ import {
   ListBoxItem as AriaListBoxItem,
   type ListBoxProps as AriaListBoxProps,
   Collection,
+  composeRenderProps,
   Header,
   type ListBoxItemProps,
   ListBoxSection,
   type SectionProps,
-  composeRenderProps,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
 import { composeTailwindRenderProps, focusRing } from './utils';

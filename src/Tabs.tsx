@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  composeRenderProps,
   Tab as RACTab,
   TabList as RACTabList,
   TabPanel as RACTabPanel,
@@ -8,7 +9,6 @@ import {
   type TabPanelProps,
   type TabProps,
   type TabsProps,
-  composeRenderProps,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
 import { focusRing } from './utils';

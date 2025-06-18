@@ -23,7 +23,7 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "format": "biome check --write src stories .storybook"
+    "format": "biome check --write src stories .storybook biome.json"
   },
   "dependencies": {
     "lucide-react": "0.517.0",

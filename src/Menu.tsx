@@ -7,11 +7,11 @@ import {
   MenuSection as AriaMenuSection,
   type MenuSectionProps as AriaMenuSectionProps,
   Collection,
+  composeRenderProps,
   Header,
   type MenuItemProps,
   Separator,
   type SeparatorProps,
-  composeRenderProps,
 } from 'react-aria-components';
 import { dropdownItemStyles } from './ListBox';
 import { Popover, type PopoverProps } from './Popover';

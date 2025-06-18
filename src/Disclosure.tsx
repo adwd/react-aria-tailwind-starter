@@ -8,11 +8,11 @@ import {
   type DisclosurePanelProps as AriaDisclosurePanelProps,
   type DisclosureProps as AriaDisclosureProps,
   Button,
+  composeRenderProps,
+  DisclosureGroupStateContext,
   DisclosureStateContext,
   Heading,
-  composeRenderProps,
 } from 'react-aria-components';
-import { DisclosureGroupStateContext } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
 import { composeTailwindRenderProps, focusRing } from './utils';
 

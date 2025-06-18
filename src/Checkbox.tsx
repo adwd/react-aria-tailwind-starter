@@ -5,8 +5,8 @@ import {
   CheckboxGroup as AriaCheckboxGroup,
   type CheckboxGroupProps as AriaCheckboxGroupProps,
   type CheckboxProps,
-  type ValidationResult,
   composeRenderProps,
+  type ValidationResult,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
 import { Description, FieldError, Label } from './Field';

@@ -2,9 +2,9 @@ import React from 'react';
 import {
   Popover as AriaPopover,
   type PopoverProps as AriaPopoverProps,
+  composeRenderProps,
   OverlayArrow,
   PopoverContext,
-  composeRenderProps,
   useSlottedContext,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
