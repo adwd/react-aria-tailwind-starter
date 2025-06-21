@@ -6,12 +6,14 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["patch"],
-      "enabled": false
+      "enabled": false,
+      "schedule": ["every weekend"]
     },
     {
       "matchUpdateTypes": ["minor", "major"],
       "groupName": "minor and major dependencies",
-      "automerge": false
+      "automerge": false,
+      "schedule": ["every weekend"]
     }
   ]
 }
