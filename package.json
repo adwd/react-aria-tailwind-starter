@@ -18,7 +18,7 @@
     "tailwindcss-animate": "^1.0.7",
     "tailwindcss-react-aria-components": "2.0.0",
     "typescript": "5.9.2",
-    "vite": "7.0.1"
+    "vite": "7.1.1"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
@@ -26,7 +26,7 @@
     "format": "biome check --write src stories .storybook biome.json"
   },
   "dependencies": {
-    "lucide-react": "0.536.0",
+    "lucide-react": "0.539.0",
     "postcss": "8.5.6",
     "react-aria-components": "1.11.0",
     "tailwind-variants": "2.1.0"
