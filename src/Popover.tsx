@@ -1,12 +1,13 @@
-import React from 'react';
+'use client';
 import {
+  OverlayArrow,
   Popover as AriaPopover,
   type PopoverProps as AriaPopoverProps,
   composeRenderProps,
-  OverlayArrow,
   PopoverContext,
   useSlottedContext,
 } from 'react-aria-components';
+import React from 'react';
 import { tv } from 'tailwind-variants';
 
 export interface PopoverProps extends Omit<AriaPopoverProps, 'children'> {

@@ -1,3 +1,4 @@
+'use client';
 import React, { type ReactNode } from 'react';
 import {
   Radio as RACRadio,
@@ -56,7 +57,7 @@ export function Radio(props: RadioProps) {
       {...props}
       className={composeTailwindRenderProps(
         props.className,
-        'flex gap-2 items-center group text-gray-800 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 forced-colors:disabled:text-[GrayText] text-sm transition',
+        'flex relative gap-2 items-center group text-gray-800 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 forced-colors:disabled:text-[GrayText] text-sm transition',
       )}>
       {(renderProps) => (
         <>

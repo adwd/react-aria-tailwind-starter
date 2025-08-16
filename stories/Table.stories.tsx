@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta } from '@storybook/react';
 import React, { useMemo, useState } from 'react';
 import { TableBody } from 'react-aria-components';
 import { Cell, Column, Row, Table, TableHeader } from '../src/Table';
@@ -32,7 +32,7 @@ export const Example = (args: any) => {
   });
 
   const items = useMemo(() => {
-    // @ts-ignore
+    // @ts-expect-error
     const items = rows
       .slice()
       .sort((a, b) => a[sortDescriptor.column].localeCompare(b[sortDescriptor.column]));

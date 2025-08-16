@@ -1,3 +1,4 @@
+'use client';
 import { XIcon } from 'lucide-react';
 import React, { createContext, useContext } from 'react';
 import {
@@ -6,10 +7,10 @@ import {
   type TagGroupProps as AriaTagGroupProps,
   type TagProps as AriaTagProps,
   Button,
-  composeRenderProps,
   TagList,
   type TagListProps,
   Text,
+  composeRenderProps,
 } from 'react-aria-components';
 import { twMerge } from 'tailwind-merge';
 import { tv } from 'tailwind-variants';

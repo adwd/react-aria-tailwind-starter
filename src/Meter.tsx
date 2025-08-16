@@ -1,3 +1,4 @@
+'use client';
 import { AlertTriangle } from 'lucide-react';
 import React from 'react';
 import { Meter as AriaMeter, type MeterProps as AriaMeterProps } from 'react-aria-components';
@@ -25,13 +26,13 @@ export function Meter({ label, ...props }: MeterProps) {
                   className="inline-block w-4 h-4 align-text-bottom"
                 />
               )}
-              {` ${valueText}`}
+              {' ' + valueText}
             </span>
           </div>
           <div className="w-64 h-2 rounded-full bg-gray-300 dark:bg-zinc-700 outline outline-1 -outline-offset-1 outline-transparent relative">
             <div
               className={`absolute top-0 left-0 h-full rounded-full ${getColor(percentage)} forced-colors:bg-[Highlight]`}
-              style={{ width: `${percentage}%` }}
+              style={{ width: percentage + '%' }}
             />
           </div>
         </>

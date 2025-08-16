@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
   ProgressBar as AriaProgressBar,
@@ -24,7 +25,7 @@ export function ProgressBar({ label, ...props }: ProgressBarProps) {
           <div className="w-64 h-2 rounded-full bg-gray-300 dark:bg-zinc-700 outline outline-1 -outline-offset-1 outline-transparent relative overflow-hidden">
             <div
               className={`absolute top-0 h-full rounded-full bg-blue-600 dark:bg-blue-500 forced-colors:bg-[Highlight] ${isIndeterminate ? 'left-full animate-in duration-1000 slide-in-from-left-[20rem] repeat-infinite ease-out' : 'left-0'}`}
-              style={{ width: `${isIndeterminate ? 40 : percentage}%` }}
+              style={{ width: (isIndeterminate ? 40 : percentage) + '%' }}
             />
           </div>
         </>

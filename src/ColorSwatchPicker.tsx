@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
   ColorSwatchPicker as AriaColorSwatchPicker,
@@ -5,9 +6,9 @@ import {
   type ColorSwatchPickerItemProps,
   type ColorSwatchPickerProps,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
 import { ColorSwatch } from './ColorSwatch';
 import { composeTailwindRenderProps, focusRing } from './utils';
+import { tv } from 'tailwind-variants';
 
 export function ColorSwatchPicker({ children, ...props }: Omit<ColorSwatchPickerProps, 'layout'>) {
   return (

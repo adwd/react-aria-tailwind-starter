@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
   composeRenderProps,
@@ -8,6 +9,7 @@ import { tv } from 'tailwind-variants';
 import { focusRing } from './utils';
 
 export interface ButtonProps extends RACButtonProps {
+  /** @default 'primary' */
   variant?: 'primary' | 'secondary' | 'destructive' | 'icon';
 }
 

@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
   DateField as AriaDateField,
@@ -9,7 +10,7 @@ import {
   type ValidationResult,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
-import { Description, FieldError, fieldGroupStyles, Label } from './Field';
+import { Description, FieldError, Label, fieldGroupStyles } from './Field';
 import { composeTailwindRenderProps } from './utils';
 
 export interface DateFieldProps<T extends DateValue> extends AriaDateFieldProps<T> {

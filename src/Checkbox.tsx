@@ -1,3 +1,4 @@
+'use client';
 import { Check, Minus } from 'lucide-react';
 import React, { type ReactNode } from 'react';
 import {
@@ -5,8 +6,8 @@ import {
   CheckboxGroup as AriaCheckboxGroup,
   type CheckboxGroupProps as AriaCheckboxGroupProps,
   type CheckboxProps,
-  composeRenderProps,
   type ValidationResult,
+  composeRenderProps,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
 import { Description, FieldError, Label } from './Field';
@@ -33,7 +34,7 @@ export function CheckboxGroup(props: CheckboxGroupProps) {
 }
 
 const checkboxStyles = tv({
-  base: 'flex gap-2 items-center group text-sm transition',
+  base: 'flex gap-2 items-center group text-sm transition relative',
   variants: {
     isDisabled: {
       false: 'text-gray-800 dark:text-zinc-200',
@@ -48,7 +49,7 @@ const boxStyles = tv({
   variants: {
     isSelected: {
       false:
-        'bg-white dark:bg-zinc-900 border-(--color) [--color:var(--color-gray-400)] dark:[--color:colors.zinc-400)] group-pressed:[--color:var(--color-gray-500)] dark:group-pressed:[--color:var(--color-zinc-300)]',
+        'bg-white dark:bg-zinc-900 border-(--color) [--color:var(--color-gray-400)] dark:[--color:var(--color-zinc-400)] group-pressed:[--color:var(--color-gray-500)] dark:group-pressed:[--color:var(--color-zinc-300)]',
       true: 'bg-(--color) border-(--color) [--color:var(--color-gray-700)] group-pressed:[--color:var(--color-gray-800)] dark:[--color:var(--color-slate-300)] dark:group-pressed:[--color:var(--color-slate-200)] forced-colors:[--color:Highlight]!',
     },
     isInvalid: {

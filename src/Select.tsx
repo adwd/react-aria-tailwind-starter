@@ -1,3 +1,4 @@
+'use client';
 import { ChevronDown } from 'lucide-react';
 import React from 'react';
 import {
@@ -46,7 +47,7 @@ export function Select<T extends object>({
   return (
     <AriaSelect
       {...props}
-      className={composeTailwindRenderProps(props.className, 'group flex flex-col gap-1')}>
+      className={composeTailwindRenderProps(props.className, 'group flex flex-col gap-1 relative')}>
       {label && <Label>{label}</Label>}
       <Button className={styles}>
         <SelectValue className="flex-1 text-sm placeholder-shown:italic" />

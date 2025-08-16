@@ -1,14 +1,15 @@
-import { ChevronRight } from 'lucide-react';
+'use client';
 import React from 'react';
 import {
   Tree as AriaTree,
   TreeItem as AriaTreeItem,
   TreeItemContent as AriaTreeItemContent,
-  type TreeItemContentProps as AriaTreeItemContentProps,
   Button,
   type TreeItemProps,
+  type TreeItemContentProps as AriaTreeItemContentProps,
   type TreeProps,
 } from 'react-aria-components';
+import { ChevronRight } from 'lucide-react';
 import { tv } from 'tailwind-variants';
 import { Checkbox } from './Checkbox';
 import { composeTailwindRenderProps, focusRing } from './utils';

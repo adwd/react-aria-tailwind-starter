@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
   ColorSlider as AriaColorSlider,
@@ -6,9 +7,9 @@ import {
   SliderTrack,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
-import { ColorThumb } from './ColorThumb';
 import { Label } from './Field';
 import { composeTailwindRenderProps } from './utils';
+import { ColorThumb } from './ColorThumb';
 
 const trackStyles = tv({
   base: 'group col-span-2 orientation-horizontal:h-6 rounded-lg',

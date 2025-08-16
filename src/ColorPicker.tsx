@@ -1,17 +1,18 @@
+'use client';
 import React from 'react';
 import {
+  Button,
   ColorPicker as AriaColorPicker,
   type ColorPickerProps as AriaColorPickerProps,
-  Button,
   DialogTrigger,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
-import { ColorArea } from './ColorArea';
-import { ColorField } from './ColorField';
-import { ColorSlider } from './ColorSlider';
 import { ColorSwatch } from './ColorSwatch';
+import { ColorArea } from './ColorArea';
+import { ColorSlider } from './ColorSlider';
+import { ColorField } from './ColorField';
 import { Dialog } from './Dialog';
 import { Popover } from './Popover';
+import { tv } from 'tailwind-variants';
 import { focusRing } from './utils';
 
 const buttonStyles = tv({

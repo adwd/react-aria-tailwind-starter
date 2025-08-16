@@ -1,6 +1,6 @@
+'use client';
 import React from 'react';
 import {
-  composeRenderProps,
   type FieldErrorProps,
   Group,
   type GroupProps,
@@ -11,6 +11,7 @@ import {
   Label as RACLabel,
   Text,
   type TextProps,
+  composeRenderProps,
 } from 'react-aria-components';
 import { twMerge } from 'tailwind-merge';
 import { tv } from 'tailwind-variants';

@@ -1,3 +1,4 @@
+'use client';
 import { ArrowUp } from 'lucide-react';
 import React from 'react';
 import {
@@ -11,15 +12,15 @@ import {
   Collection,
   type ColumnProps,
   ColumnResizer,
-  composeRenderProps,
   Group,
   ResizableTableContainer,
   type RowProps,
   type TableHeaderProps,
   type TableProps,
+  composeRenderProps,
   useTableOptions,
 } from 'react-aria-components';
-// import { twMerge } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 import { tv } from 'tailwind-variants';
 import { Checkbox } from './Checkbox';
 import { composeTailwindRenderProps, focusRing } from './utils';

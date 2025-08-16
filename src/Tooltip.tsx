@@ -1,9 +1,10 @@
+'use client';
 import React from 'react';
 import {
   Tooltip as AriaTooltip,
   type TooltipProps as AriaTooltipProps,
-  composeRenderProps,
   OverlayArrow,
+  composeRenderProps,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
 

@@ -1,20 +1,21 @@
-import { ChevronRight } from 'lucide-react';
+'use client';
 import React, { useContext } from 'react';
 import {
   Disclosure as AriaDisclosure,
   DisclosureGroup as AriaDisclosureGroup,
+  type DisclosureProps as AriaDisclosureProps,
   type DisclosureGroupProps as AriaDisclosureGroupProps,
   DisclosurePanel as AriaDisclosurePanel,
   type DisclosurePanelProps as AriaDisclosurePanelProps,
-  type DisclosureProps as AriaDisclosureProps,
-  Button,
   composeRenderProps,
-  DisclosureGroupStateContext,
-  DisclosureStateContext,
   Heading,
+  Button,
+  DisclosureStateContext,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
+import { ChevronRight } from 'lucide-react';
 import { composeTailwindRenderProps, focusRing } from './utils';
+import { DisclosureGroupStateContext } from 'react-aria-components';
 
 const disclosure = tv({
   base: 'group min-w-64 border border-gray-200 dark:border-zinc-600 rounded-lg text-gray-900 dark:text-zinc-200',

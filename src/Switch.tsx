@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { Switch as AriaSwitch, type SwitchProps as AriaSwitchProps } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
@@ -41,7 +42,7 @@ export function Switch({ children, ...props }: SwitchProps) {
       {...props}
       className={composeTailwindRenderProps(
         props.className,
-        'group flex gap-2 items-center text-gray-800 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 forced-colors:disabled:text-[GrayText] text-sm transition',
+        'group relative flex gap-2 items-center text-gray-800 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 forced-colors:disabled:text-[GrayText] text-sm transition',
       )}>
       {(renderProps) => (
         <>

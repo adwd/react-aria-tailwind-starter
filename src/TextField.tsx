@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
   TextField as AriaTextField,
@@ -5,7 +6,7 @@ import {
   type ValidationResult,
 } from 'react-aria-components';
 import { tv } from 'tailwind-variants';
-import { Description, FieldError, fieldBorderStyles, Input, Label } from './Field';
+import { Description, FieldError, Input, Label, fieldBorderStyles } from './Field';
 import { composeTailwindRenderProps, focusRing } from './utils';
 
 const inputStyles = tv({
